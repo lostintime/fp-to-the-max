@@ -18,6 +18,8 @@
 import { HK } from "funland"
 import { Eval } from "funfix-effect"
 
+describe("Variance test", () => {
+})
 export interface Program<F> {
   // declared as a method
   pass<A>(fa: HK<F, A>): HK<F, A>

@@ -1,6 +1,10 @@
 {
   "extends": "@lostintime/devcon-ts",
   "compilerOptions": {
-    "outDir": "dist"
-  }
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": [
+    "src"
+  ]
 }
