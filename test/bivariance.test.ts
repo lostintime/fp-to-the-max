@@ -36,7 +36,7 @@ export const ProgramEval: Program<"funfix/eval"> = {
 //   pass: <A>(fa: Eval<A>): Eval<A> => fa
 // }
 
-// src/utils/bivariance-test.ts:36:3 - error TS2322: Type '<A>(fa: Eval<A>) => Eval<A>' is not assignable to type '<A>(fa: HK<"funfix/eval", A>) => HK<"funfix/eval", A>'.
+// test/bivariance.test.ts:36:3 - error TS2322: Type '<A>(fa: Eval<A>) => Eval<A>' is not assignable to type '<A>(fa: HK<"funfix/eval", A>) => HK<"funfix/eval", A>'.
 //   Types of parameters 'fa' and 'fa' are incompatible.
 //     Type 'HK<"funfix/eval", A>' is missing the following properties from type 'Eval<A>': get, map, flatMap, chain, and 5 more.
 
