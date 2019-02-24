@@ -1,0 +1,6 @@
+{
+  "extends": "@lostintime/devcon-ts",
+  "compilerOptions": {
+    "outDir": "dist"
+  }
+}

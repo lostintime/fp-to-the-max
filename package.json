@@ -1,0 +1,44 @@
+{
+  "name": "@lostintime/fp-to-the-max",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Generic functional programmin example, using TypeScript",
+  "author": {
+    "name": "Vadim Vasciuc",
+    "email": "lostintime.dev@gmail.com",
+    "url": "https://lostintimedev.com"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/lostintime/devcon-ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "clean": "rimraf dist",
+    "test": "mocha --opts mocha.opts",
+    "test:watch": "mocha --opts mocha.opts --watch",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "start": "node ./dist/game"
+  },
+  "dependencies": {
+    "@lostintime/devcon-ts": "0.2.0",
+    "funfix-effect": "7.0.1",
+    "funfix-exec": "7.0.1",
+    "funland": "0.1.5"
+  },
+  "devDependencies": {
+    "@types/chai": "4.1.7",
+    "@types/mocha": "5.2.6",
+    "@types/node": "10.12.21",
+    "chai": "4.2.0",
+    "mocha": "6.0.1",
+    "rimraf": "2.6.3",
+    "ts-node": "8.0.2",
+    "tslint": "5.13.0",
+    "tslint-config-standard": "8.0.1",
+    "tslint-eslint-rules": "5.4.0",
+    "typescript": "3.3.3333"
+  }
+}
